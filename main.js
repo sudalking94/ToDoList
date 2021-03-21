@@ -1,29 +1,24 @@
-const div_time = document.querySelector(".time");
+const spanTime = document.querySelector(".time__span");
 const inputName = document.querySelector(".name__inputName");
 const formName = document.querySelector(".name__form");
 const divName = document.querySelector(".name");
 
 function mkClock() {
-  const span = document.createElement("span");
-  div_time.appendChild(span);
-
-  setInterval(function () {
-    const clock = new Date();
-    const time = clock.toLocaleString("en-US", {
-      hour: "numeric",
-      minute: "numeric",
-      hour12: true,
-    });
-    const second = clock.getSeconds();
-    const s = second < 10 ? "0" + second : second;
-    span.textContent = `${time} ${s}`;
-  }, 1000);
+  const clock = new Date();
+  const time = clock.toLocaleString("en-US", {
+    hour: "numeric",
+    minute: "numeric",
+    second: "numeric",
+    hour12: true,
+  });
+  spanTime.textContent = `${time}`;
+  setInterval(mkClock, 1000);
 }
 
 function mkName() {
   const btn = document.querySelector(".btn-undo");
   const span = document.createElement("span");
-  divName.appendChild(span);
+  divName.insertBefore(span, divName.firstChild);
   if (localStorage.getItem("name")) {
     inputName.style.display = "none";
     span.innerHTML = `Hello ${localStorage.getItem("name")}!`;
