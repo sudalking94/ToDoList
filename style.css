@@ -1,11 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap");
 body {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
   height: 100vh;
 }
+body > div:first-child {
+  text-align: right;
+  width: 100%;
+}
+body > div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -29,9 +41,12 @@ body {
   font-size: 60px;
 }
 .name {
+  width: 500px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 300px;
 }
 .name span {
   color: #17d4fe;
@@ -58,6 +73,24 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  position: relative;
+}
+
+table {
+  position: absolute;
+  background-color: aqua;
+  border-radius: 10px;
+  border: 1px solid #17d4fe;
+  width: 300px;
+  height: 400px;
+  top: -250px;
+}
+table:first-child {
+  right: 280px;
+}
+table:last-child {
+  left: 280px;
 }
 table > thead td {
   text-align: center;
@@ -72,13 +105,6 @@ table > tbody > tr > td:first-child {
   font-size: 13px;
 }
 
-table {
-  background-color: aqua;
-  border-radius: 10px;
-  border: 1px solid #17d4fe;
-  width: 300px;
-}
-
 table button:first-child {
   color: red;
 }
@@ -86,7 +112,9 @@ table button:first-child {
 table button:last-child {
   color: green;
 }
-
+button:hover {
+  cursor: pointer;
+}
 table input {
   border-radius: 20px;
   border: 1px solid #17d4fe;
