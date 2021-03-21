@@ -1,0 +1,10 @@
+{
+  "configurations": [
+    {
+      "type": "pwa-chrome",
+      "name": "http://file:///C:/Users/junwo/Documents/GitHub/ToDoList/index.html",
+      "request": "launch",
+      "url": "C:/Users/junwo/Documents/GitHub/ToDoList/index.html"
+    }
+  ]
+}
