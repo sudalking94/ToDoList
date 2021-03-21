@@ -54,7 +54,7 @@ function showHide() {
     console.log("true");
     todolist.style.display = "none";
   } else {
-    todolist.style.display = "block";
+    todolist.style.display = "flex";
   }
 }
 function init() {

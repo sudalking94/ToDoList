@@ -7,60 +7,64 @@
     <title>ToDoList</title>
   </head>
   <body>
-    <div>
-      <span class="js-weather"></span>
-    </div>
-    <div>
-      <div class="time"><span class="time__span"></span></div>
-
-      <div>
-        <div class="name">
-          <form class="name__form">
-            <input
-              type="text"
-              placeholder="Type your name here"
-              class="name__inputName"
-              maxlength="10"
-            />
-          </form>
-          <i class="fas fa-undo fa-sm btn-undo"></i>
-        </div>
-        <div class="todolist">
-          <table class="todolist__todo">
-            <thead>
-              <tr>
-                <td>To do</td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <form class="todolist__form">
-                    <input
-                      type="text"
-                      placeholder="Add task"
-                      id="todolist__text"
-                      maxlength="35"
-                    />
-                  </form>
-                </td>
-              </tr>
-            </thead>
-            <tbody class="todolist__tbody"></tbody>
-          </table>
-          <table class="todolist__done">
-            <thead>
-              <tr>
-                <td>Done</td>
-              </tr>
-            </thead>
-            <tbody class="done__tbody"></tbody>
-          </table>
-        </div>
-      </div>
+    <div class="weather">
       <div></div>
+      <div>
+        <span class="js-weather"></span>
+      </div>
     </div>
-    <div></div>
+
+    <div class="time"><span class="time__span"></span></div>
+
+    <div class="name">
+      <form class="name__form">
+        <input
+          type="text"
+          placeholder="Type your name here"
+          class="name__inputName"
+          maxlength="10"
+        />
+      </form>
+      <i class="fas fa-undo fa-sm btn-undo"></i>
+    </div>
+    <div class="todolist">
+      <section>
+        <table class="todolist__todo">
+          <thead>
+            <tr>
+              <td>To do</td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <form class="todolist__form">
+                  <input
+                    type="text"
+                    placeholder="Add task"
+                    id="todolist__text"
+                    maxlength="35"
+                  />
+                </form>
+              </td>
+            </tr>
+          </thead>
+          <tbody class="todolist__tbody"></tbody>
+        </table>
+      </section>
+
+      <section>
+        <table class="todolist__done">
+          <thead>
+            <tr>
+              <td>Done</td>
+            </tr>
+          </thead>
+          <tbody class="done__tbody"></tbody>
+        </table>
+      </section>
+    </div>
+
     <script src="main.js"></script>
-    <!-- <script src="bg.js"></script> -->
+    <script src="bg.js"></script>
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"
       crossorigin="anonymous"

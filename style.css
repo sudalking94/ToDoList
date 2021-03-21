@@ -1,23 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap");
 body {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
   height: 100vh;
 }
-body > div:first-child {
-  text-align: right;
-  width: 100%;
-}
-body > div:nth-child(2) {
+.weather {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-direction: column;
-  height: 70vh;
+  text-align: center;
+  width: 100%;
 }
+.weather span {
+  display: block;
+  width: 200px;
 
+  background-color: #17d4fe;
+  border-radius: 20px;
+  border: 2px solid gray;
+  box-shadow: 0px 0px 5px white;
+}
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -39,14 +39,14 @@ body > div:nth-child(2) {
   color: #17d4fe;
   font-family: "Syne Mono", monospace;
   font-size: 60px;
+  text-align: center;
 }
 .name {
-  width: 500px;
-  height: 100px;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 300px;
+  margin-top: 150px;
 }
 .name span {
   color: #17d4fe;
@@ -73,25 +73,20 @@ body > div:nth-child(2) {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  position: relative;
+  margin-top: 100px;
 }
-
-table {
-  position: absolute;
+section {
+  height: 400px;
   background-color: aqua;
   border-radius: 10px;
   border: 1px solid #17d4fe;
+  overflow: auto;
+  margin: 0px 20px;
+}
+table {
   width: 300px;
-  height: 400px;
-  top: -250px;
 }
-table:first-child {
-  right: 280px;
-}
-table:last-child {
-  left: 280px;
-}
+
 table > thead td {
   text-align: center;
   color: red;
