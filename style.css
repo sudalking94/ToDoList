@@ -33,6 +33,10 @@ body {
   justify-content: center;
   align-items: center;
 }
+.name span {
+  color: #17d4fe;
+  font-size: 30px;
+}
 .name i {
   margin-left: 10px;
   color: #17d4fe;
@@ -47,5 +51,50 @@ body {
 }
 
 .name__inputName:focus {
+  outline: none;
+}
+
+.todolist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+table > thead td {
+  text-align: center;
+  color: red;
+}
+table > tbody > tr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+table > tbody > tr > td:first-child {
+  font-size: 13px;
+}
+
+table {
+  background-color: aqua;
+  border-radius: 10px;
+  border: 1px solid #17d4fe;
+  width: 300px;
+}
+
+table button:first-child {
+  color: red;
+}
+
+table button:last-child {
+  color: green;
+}
+
+table input {
+  border-radius: 20px;
+  border: 1px solid #17d4fe;
+  width: 100%;
+  padding: 0px;
+  border: 0px;
+}
+
+table input:focus {
   outline: none;
 }
